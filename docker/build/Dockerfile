@@ -5,12 +5,13 @@ ENV NODE_VERSION=18.15.0
 ENV NODE_ARCH=node-v$NODE_VERSION-linux-x64.tar.xz
 
 ENV ARCH=x64
-ENV PHPMYADMIN_VERSION=6.0+snapshot
+ENV PHPMYADMIN_VERSION=5.2+snapshot
 ENV PHPMYADMIN_NAME=phpMyAdmin-$PHPMYADMIN_VERSION-english
 #versions normales : phpMyAdmin
 ENV PHPMYADMIN_DIR=snapshots
 
 WORKDIR "/root"
+ADD /conf/phpmyadmin/phpmyadmin.conf .
 
 # COPY /conf/phpmyadmin/phpmyadmin.conf .
 
@@ -48,6 +49,7 @@ RUN tar xvf $PHPMYADMIN_NAME.tar.gz; \
     mkdir /root/trf; \    
     /etc/init.d/mariadb start;  \
     a2enmod rewrite; \     
+    mv phpmyadmin.conf /etc/apache2/conf-available; \     
     a2enconf phpmyadmin.conf; \
     /etc/init.d/mariadb start;    
     # service mariadb start;
