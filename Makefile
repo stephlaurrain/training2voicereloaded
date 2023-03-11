@@ -47,8 +47,14 @@ drmf:
 clnright:
 	docker exec  $(REMOTE_ROOT) $(CONTAINER_NAME) bash -c '/root/install/clnright.sh'
 
+init:
+	docker exec  $(REMOTE_ROOT) $(CONTAINER_NAME) bash -c '/root/install/init.sh'
+
 prune:
 	docker image prune -a
+
+builderprune:
+	docker builder prune
 
 #param make erase CONTAINER_NAME="mon_container" lancé par make erase CONTAINER_NAME="pro"
 erase: stopall

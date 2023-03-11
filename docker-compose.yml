@@ -2,8 +2,12 @@
         build: ./docker/build/
         ports:
             - "80:80"            
-        volumes:      
+        volumes:    
+        - ./src:/var/www/html  
         - ./docker/build/install:/root/install
+        - ./docker/build/conf/phpmyadmin/phpmyadmin.conf:/etc/apache2/conf-available/phpmyadmin.conf              
+        - ./docker/build/conf/apache2/apache2.conf:/etc/apache2/apache2.conf
+        # command: [ "/root/install/init.sh" ]
         container_name: training_devenv_ctn
 
 
