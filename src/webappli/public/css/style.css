@@ -1,0 +1,376 @@
+
+
+
+.main {
+    margin-top:1px;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    overflow: hidden;
+}
+
+
+
+.logo {
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.title {
+    font-family:bebas;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.trn-bar {
+    background-color:#888888;
+    border-radius:10px;    
+    padding-right: 20px;
+}
+
+.grids-container {
+    margin-top:1px;
+}
+
+
+.traingrid-container {
+    margin-bottom:2px;
+}
+
+
+/* chrono dial */
+
+
+/*.chrono-container {
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:5px;
+    padding:10px;
+    background-color:#EEEEEE; 
+}*/
+
+.dial-chrono-command {
+    margin-top:5px;
+}
+
+#dial-cercle
+{
+    background-color:#444444; 
+    height:120px; 
+    width:120px; 
+    margin:auto; /*centrer le cercle au milieux */
+    border-radius:40px; /* On arrondit notre div */
+    border:2px solid grey;  /* On ajoute une bordure de 10 pixel grise */
+}
+
+#dial-panneau
+{
+    background-color:#000000;  /* Fond gris */
+    height:70px;
+    width:105px;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:25px;
+    border-radius:5px;
+    font-family:withoutsun;
+    font-weight: bold;
+    color:white;
+    font-size:66px;
+    text-align:center;
+}
+
+.dial-btn-chrn
+{
+    text-align:center;
+    background:#999999;
+    padding-top:4px;
+    padding-right:2px;
+    padding-bottom:0px;
+    padding-left:0px;
+    margin-right:2px;
+    font-size:15px;
+    border-radius:10px;
+    font-family:withoutsun;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*
+dial-gri_bouton
+{
+margin:auto;
+width:100px;
+text-align:center
+}*/
+
+/* chrono - play */
+#chronoplay {
+    background-color: #DDDDDD;
+    padding:10px;
+}
+
+.play-chrono-command {
+    margin-top:5px;
+}
+
+#play-cercle
+{
+    background-color:#444444; 
+    height:50px; 
+    width:100%; 
+    /*margin:auto; /*centrer le cercle au milieux */
+    margin-left:auto; 
+    margin-right:auto;
+    border-radius:10px; /* On arrondit notre div */
+    border:2px solid grey;  /* On ajoute une bordure de 10 pixel grise */
+}
+
+#play-panneau
+{
+    background-color:#000000;  /* Fond gris */
+    height:40px;
+    width:90%;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:4px;
+    border-radius:5px;
+    font-family:withoutsun;
+    font-weight: bold;
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+
+
+.play-btn-chrn
+{
+    text-align:center;
+    background:#999999;
+    padding-top:4px;
+    padding-right:2px;
+    padding-bottom:0px;
+    padding-left:0px;
+    
+    font-size:15px;
+    border-radius:10px;
+    font-family:withoutsun;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.police_withoutsun {
+    font-family:withoutsun;
+
+}
+
+/* polices */
+@font-face {
+    font-family: withoutsun;  
+    src: url(../fonts/adaywithoutsun.otf) format('truetype');
+}
+
+@font-face {
+    font-family: horusn;  
+    src: url(../fonts/horusn.otf) format('truetype');
+}
+
+@font-face {
+    font-family: bebas;  
+    src: url(../fonts/bebas.ttf) format('truetype');
+}
+
+
+/* surcharge jsgrid */
+
+.jsgrid-insert-row>.jsgrid-cell {
+    background: #AAAAAA !important;
+}
+
+.jsgrid-edit-row>.jsgrid-cell {
+    background: #EEEEEE !important;
+}
+
+.jsgrid-control-field {
+    width:30px !important;
+}
+
+
+/*boutons*/
+.jsgrid .jsgrid-mode-button {
+    width: 16px !important;
+    height: 16px !important; 
+}
+
+.jsgrid-insert-mode-button, .jsgrid-insert-button {
+    background-image:url('../../assets/images/icons/add.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-search-mode-button, .jsgrid-search-button{
+    background-image:url('../../assets/images/icons/magnifier.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-clear-filter-button {
+    background-image:url('../../assets/images/icons/funnel.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-edit-button {
+    background-image:url('../../assets/images/icons/pencil.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-delete-button {
+    background-image:url('../../assets/images/icons/rubbish-bin.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-cancel-edit-button {
+    background-image:url('../../assets/images/icons/back-arrow.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid-update-button {
+    background-image:url('../../assets/images/icons/checked.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.jsgrid {
+    font-size: 0.8em !important;
+}
+
+.jsgrid-cell,.jsgrid-header-cell {
+    padding: .3em !important;
+}
+
+
+.highlightgridrow td {
+  background: #80bdff !important;
+}
+
+/* toolbar */
+
+.toolbar-btn-container {
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:0px;
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+.toolbar-button{
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;  
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0 0 !important;
+}
+
+
+
+
+.toolbar-add-button {  
+    background-image:url('../../assets/images/icons/musculous-arm.png'); 
+}
+
+.toolbar-play-button {
+    background-image:url('../../assets/images/icons/play-button.png'); 
+}
+
+.toolbar-duplicate-button {
+    background-image:url('../../assets/images/icons/duplicate.png'); 
+}
+
+.toolbar-settings-button {  
+    background-image:url('../../assets/images/icons/settings-gears.png'); 
+}
+
+.toolbar-coherence-button {  
+    background-image:url('../../assets/images/icons/heartbeat.png'); 
+}
+
+
+.exercicetraining-up-button {    
+    background-image:url('../../assets/images/icons/arrow-up.png') !important; 
+    background-position: 0 0 !important;
+}
+
+.exercicetraining-down-button {
+    background-image:url('../../assets/images/icons/arrow-down.png') !important; 
+    background-position: 0 0 !important;
+}
+
+
+
+
+/* play page */
+.playmain {
+    background-color: #EEEEEE;
+}
+
+.play-grids-container {
+    margin-top:1px;
+}
+
+
+.play-traingrid-container {
+    margin-bottom:5px;
+}
+
+
+
+#debug {
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    margin-bottom: 5px;
+    position: absolute;
+    z-index: 1000;
+    top: 10px; 
+    right: 80px;
+    min-width:400px;
+}
+
+
+
+.navbar {
+    border-radius: 4px;
+    padding: 0rem 0rem;
+}
+
+.navbar-brand {
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+#totaltrain{
+    padding-right:3px;
+    padding-left:3px;
+    padding-top:1px;
+    padding-bottom:3px;
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    margin-bottom: 5px;
+    text-align:center;
+    height:40px;
+    font-size:30px;    
+    font-family:withoutsun;
+    font-weight: bold;
+}

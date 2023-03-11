@@ -1,0 +1,13 @@
+    training_devenv_img:        
+        build: ./docker/build/
+        ports:
+            - "80:80"            
+        volumes:      
+        - ./docker/build/install:/root/install
+        container_name: training_devenv_ctn
+
+
+
+
+
+

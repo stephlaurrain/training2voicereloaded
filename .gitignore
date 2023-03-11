@@ -1,0 +1,16 @@
+NOTES
+GARDERconfig-prod.php
+src/includes
+www
+tmp
+src/node_modules
+trsh
+ATTENTION.txt
+docker/build/install/node-v18.13.0-linux-x64.tar.xz
+docker/build/install/phpmyadmin.tar.gz
+docker/build/conf
+docker/build/Dockerfile copy
+docker-compose copy.yml
+Commandes
+docker/build/dock
+sql
